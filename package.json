@@ -1,0 +1,37 @@
+{
+  "name": "read-promise",
+  "version": "0.1.0",
+  "description": "Promise to give back a readable stream later",
+  "keywords": [],
+  "author": "Raynos <raynos2@gmail.com>",
+  "repository": "git://github.com/Raynos/read-promise.git",
+  "main": "index",
+  "homepage": "https://github.com/Raynos/read-promise",
+  "contributors": [
+    {
+      "name": "Jake Verbaten"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Raynos/read-promise/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "dependencies": {
+    "readable-stream": "0.0.2",
+    "re-emitter": "~0.2.0"
+  },
+  "devDependencies": {
+    "tap": "~0.3.1",
+    "read-stream": "~0.4.2",
+    "write-stream": "~0.4.1"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/read-promise/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "tap --stderr --tap ./test"
+  }
+}
