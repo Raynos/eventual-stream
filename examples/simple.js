@@ -1,14 +1,14 @@
 var from = require("read-stream").fromArray
     , to = require("write-stream").toArray
 
-    , PromiseStream = require("..")
+    , EventualStream = require("..")
 
-var promise = PromiseStream()
+var fulfill = EventualStream()
 
-promise.stream.pipe(to(function (list) {
-    console.log("promise", list)
+fulfill.stream.pipe(to(function (list) {
+    console.log("fulfill", list)
 }))
 
 setTimeout(function () {
-    promise(from([1,2,3]))
+    fulfill(from([1,2,3]))
 }, 1000)

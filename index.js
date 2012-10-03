@@ -1,9 +1,9 @@
 var Readable = require("readable-stream")
     , reemit = require("re-emitter").reemit
 
-module.exports = ReadPromise
+module.exports = EventualStream
 
-function ReadPromise() {
+function EventualStream() {
     var stream = new Readable()
         , source
 

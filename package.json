@@ -1,19 +1,19 @@
 {
-  "name": "read-promise",
+  "name": "eventual-stream",
   "version": "0.1.0",
   "description": "Promise to give back a readable stream later",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
-  "repository": "git://github.com/Raynos/read-promise.git",
+  "repository": "git://github.com/Raynos/eventual-stream.git",
   "main": "index",
-  "homepage": "https://github.com/Raynos/read-promise",
+  "homepage": "https://github.com/Raynos/eventual-stream",
   "contributors": [
     {
       "name": "Jake Verbaten"
     }
   ],
   "bugs": {
-    "url": "https://github.com/Raynos/read-promise/issues",
+    "url": "https://github.com/Raynos/eventual-stream/issues",
     "email": "raynos2@gmail.com"
   },
   "dependencies": {
@@ -28,7 +28,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/Raynos/read-promise/raw/master/LICENSE"
+      "url": "http://github.com/Raynos/eventual-stream/raw/master/LICENSE"
     }
   ],
   "scripts": {

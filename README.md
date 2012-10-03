@@ -1,4 +1,4 @@
-# read-promise
+# eventual-stream
 
 Promise to give back a readable stream later
 
@@ -7,22 +7,22 @@ Promise to give back a readable stream later
 ``` js
 var from = require("read-stream").fromArray
     , to = require("write-stream").toArray
-    , PromiseStream = require("read-promise")
+    , EventualStream = require("eventual-stream")
 
-var promise = PromiseStream()
+var fulfill = EventualStream()
 
-promise.stream.pipe(to(function (list) {
-    console.log("promise", list)
+fulfill.stream.pipe(to(function (list) {
+    console.log("eventual", list)
 }))
 
 setTimeout(function () {
-    promise(from([1,2,3]))
+    fulfill(from([1,2,3]))
 }, 1000)
 ```
 
 ## Installation
 
-`npm install read-promise`
+`npm install eventual-stream`
 
 ## Contributors
 
